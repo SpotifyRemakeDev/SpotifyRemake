@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 
 import Header from './Header.jsx';
 import Main from './Main.jsx';
-import Carousel from './Carousel.jsx';
 import Footer from './Footer.jsx';
 
 const App = () => {

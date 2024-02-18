@@ -1,0 +1,11 @@
+#footer {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  background: linear-gradient(90deg, #af2896, #509bf5);
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 5px;
+}

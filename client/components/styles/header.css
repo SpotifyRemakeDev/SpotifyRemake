@@ -1,0 +1,23 @@
+#navbar {
+  background-color: #101010;
+  display: flex;
+}
+
+#home-search {
+  width: 25rem;
+  padding: 1rem;
+  margin: 0.25rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: yellow;
+}
+
+.premium-signup-login {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0.25rem;
+}

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import Main from './Main.jsx';
+import Main from "./Library/Main.jsx";
 
 const App = () => {
   

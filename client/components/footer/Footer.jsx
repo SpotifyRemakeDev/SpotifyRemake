@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <>
       <div id="footer">
-        <div>
-          <p>Hello world</p>
-          <p>Hello world</p>
+        <div className = "paragraph-text">
+          <p>Preview of Spotify</p>
+          <p>Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
         </div>
         <div>
           <button>Sign up free</button>

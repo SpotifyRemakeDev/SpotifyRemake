@@ -6,9 +6,9 @@ const Home_Search = () => {
   return (
     <>
       <div id="home-search">
-        <p>Spotify</p>
-        <p>Home</p>
-        <p>Search</p>
+        <p className ="spotify">Spotify</p>
+        <p className = "home">Home</p>
+        <p className = "search">Search</p>
       </div>
       ;
     </>

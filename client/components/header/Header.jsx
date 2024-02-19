@@ -14,10 +14,10 @@ const Header = () => {
             <img id="fireball" src={`${fireball}`} alt="fireball" />
             <img id="fireball" src={`${fireball}`} alt="fireball" />
           </div>
-          <div>
-            <p>Premium</p>
-            <p>Support</p>
-            <p>Download</p>
+          <div className="center-div">
+            <p className="premium">Premium</p>
+            <p className="support">Support</p>
+            <p className="download">Download</p>
           </div>
           <div>
             <button id="signup">Sign up</button>

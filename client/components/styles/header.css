@@ -9,15 +9,35 @@
   margin: 0.25rem;
   border: 2px solid black;
   border-radius: 5px;
-  background-color: yellow;
+  color: white;
 }
 
 .premium-signup-login {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  background-color: yellow;
+  color: #868686;
   border: 2px solid black;
   border-radius: 5px;
   margin: 0.25rem;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+}
+
+.center-div {
+  display: flex;
+  position: relative;
+  left: 18rem;
+  height: 20px;
+}
+
+.center-div p {
+  padding-left: 10px;
+}
+
+.premium:hover,
+.support:hover,
+.download:hover {
+  color: white;
+  cursor: pointer;
 }

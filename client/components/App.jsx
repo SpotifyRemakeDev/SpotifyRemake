@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-import Header from "./header/Header.jsx";
-import Footer from "./footer/Footer.jsx";
-import "./styles/app.css";
-// import Main from './Main.jsx';
-// import Footer from './Footer.jsx';
+import Header from './header/Header.jsx';
+import Main from './Library/Main.jsx';
+// import Carousel from './Carousel.jsx';
+import Footer from './footer/Footer.jsx';
 
 const App = () => {
   // Commented out, fossil from original template code ////////////////////
@@ -22,6 +21,8 @@ const App = () => {
   return (
     <>
       <Header />
+      <Main />
+      {/* <Carousel /> */}
       <Footer />
     </>
   );

@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
-import Main from "./Library/Main.jsx";
+
+import Header from './header/Header.jsx';
+import Main from './Library/Main.jsx';
+// import Carousel from './Carousel.jsx';
+import Footer from './footer/Footer.jsx';
 
 const App = () => {
-  
   // Commented out, fossil from original template code ////////////////////
   // const [tasks, setTasks] = useState([]);
 
@@ -17,7 +20,10 @@ const App = () => {
 
   return (
     <>
+      <Header />
       <Main />
+      {/* <Carousel /> */}
+      <Footer />
     </>
   );
 };

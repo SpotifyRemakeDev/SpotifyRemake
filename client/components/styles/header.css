@@ -1,0 +1,62 @@
+#navbar {
+  background-color: #101010;
+  display: flex;
+}
+
+#home-search {
+  width: 32rem;
+  padding: 1rem;
+  border: 8px solid black;
+  border-radius: 5px;
+  color: white;
+  background-color: #121212;
+  position: relative;
+}
+
+.premium-signup-login {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  right: 4px;
+  border-top: 10px solid black;
+  border-radius: 5px;
+  width: 100vw;
+  color: #868686;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  font-size: 1.125rem;
+  background-color: #121212;
+}
+
+.center-div {
+  display: flex;
+  position: relative;
+  left: 18rem;
+  height: 20px;
+}
+
+.center-div p {
+  padding-left: 10px;
+}
+
+.premium:hover,
+.support:hover,
+.download:hover {
+  color: white;
+  cursor: pointer;
+}
+
+#chevronLeftID,
+#chevronRightID {
+  width: 2.2rem;
+  position: relative;
+  left: 1.5rem;
+  top: 1rem;
+  background-color: #9c9c9c;
+  margin-right:10px;
+}
+
+#chevronLeftID:hover,
+#chevronRightID:hover {
+  background-color: white;
+}

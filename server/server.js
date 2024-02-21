@@ -1,27 +1,39 @@
 import express from "express";
-import pg from "pg";
 import dotenv from "dotenv";
+import mongoose from "mongoose";
+import Music from "./models/Music";
 
 dotenv.config({ path: "../.env" });
-
-const { PORT, DATABASE_URL } = process.env;
-
-const client = new pg.Client({
-  connectionString: DATABASE_URL,
-});
-
-await client.connect();
 
 const app = express();
 
 app.use(express.json());
 
-app.get("/api/tasks", (req, res) => {
-  client.query("SELECT * FROM tasks").then((result) => {
-    res.send(result.rows);
+mongoose
+  .connect("mongodb://localhost:27017/musicData", {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log(" MONGO CONNECTION OPEN!!!");
+  })
+  .catch((err) => {
+    console.log("OH NO MONGO CONNECTION ERROR!!");
+    console.log(err);
   });
+
+app.get("/music", async (req, res) => {
+  const newMusic = await Music.find({});
+  res.send(newMusic);
 });
 
-app.listen(PORT, () => {
-  console.log(`Listening on port ${PORT}`);
+app.get("/music/:id", async (req, res) => {
+  const { id } = req.params;
+  const indexMusic = await Music.findById(id);
+  res.send(indexMusic);
+});
+
+app.listen(3000, () => {
+  console.log(`Listening on port ${3000}`);
 });

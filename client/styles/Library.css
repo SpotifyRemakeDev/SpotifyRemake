@@ -1,0 +1,74 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    background-color: rgb(18, 18, 18);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-family,
+                CircularSp,
+                CircularSp-Arab,
+                CircularSp-Hebr,
+                CircularSp-Cyrl,
+                CircularSp-Grek,
+                CircularSp-Deva,
+                var(--fallback-fonts, sans-serif));
+}
+
+.personal-container {
+    padding-bottom: 50vh;
+}
+
+.library-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.library-container div {
+    color: rgb(207, 207, 207);
+    font-weight: 700;
+}
+
+.playlist-container,
+.podcast-container {
+    background-color: rgb(36, 36, 36);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.playlist-container div,
+.podcast-container div {
+    color: white;
+    padding: 5px;
+}
+
+.podcast-title,
+.playlist-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.href-container div {
+    color: rgb(207, 207, 207);
+    font-size: 11px;
+    padding: 7px;
+}
+
+.href-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.language-container {
+    padding-top: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+}

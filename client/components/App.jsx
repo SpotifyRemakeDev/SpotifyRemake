@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
-
-import Header from './Header.jsx';
-import Main from './Main.jsx';
-import Carousel from './Carousel.jsx';
-import Footer from './Footer.jsx';
+import Main from "./Library/Main.jsx";
 
 const App = () => {
   
@@ -21,10 +17,7 @@ const App = () => {
 
   return (
     <>
-      <Header />
       <Main />
-      <Carousel />
-      <Footer />
     </>
   );
 };
